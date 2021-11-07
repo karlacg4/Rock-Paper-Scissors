@@ -1,0 +1,559 @@
+
+body{
+    width:1366px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: white;
+    height: 100%;
+    background: radial-gradient(at top,hsl(214, 47%, 23%) 0%, hsl(237, 49%, 15%) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.score{
+    background-color: white;
+    color: hsl(229, 64%, 46%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1%;
+    width: 20%;
+    height:120px;
+}
+
+.num{
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+    font-size: 55px;
+    margin-top: -20px;
+}
+
+.lttrsp{
+    letter-spacing: 3px;
+}
+.sc{
+    font-size: 30px;
+}
+
+.box{
+    
+    border: solid 3px hsl(217, 16%, 45%);
+    border-radius: 8px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    margin-top: 4%;
+    padding: 1%;
+    width: 65%;
+    height: 150px;
+}
+
+
+img.cent{
+    display: block;
+    margin: auto;
+    padding-top: 10%;
+    width: 25%;
+    height: 25%;
+}
+
+.crclWh{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 150%;
+    border: solid 18px white ;
+    box-shadow: 1px 8px 2px hsl(217, 16%, 45%)
+}
+.pic{
+    margin: auto;
+    margin-top: 24%;
+    display: block;
+}
+
+.pic2{
+    margin: auto;
+    margin-top: 15%;
+    display: block;
+}
+
+/*image circle*/
+.paper{
+    border-radius: 100%;
+    border: solid 18px hsl(230, 89%, 65%) ;
+    box-shadow: 1px 8px 2px  hsl(230, 89%, 62%), inset 0px 6px 0px 0px rgba(0,0,0,.25);
+    position: relative;
+    margin-top: -26%;
+    margin-left: 35%;
+}
+
+
+.scissors{
+    border-radius: 100%;
+    border: solid 18px hsl(40, 84%, 53%) ;
+    box-shadow: 1px 8px 2px  hsl(39, 89%, 49%), inset 0px 6px 0px 0px rgba(0,0,0,.25);
+    position: relative;
+    margin-top: -11%;
+    margin-left: 55%;
+    
+}.rock{
+    border-radius: 100%;
+    border: solid 18px hsl(349, 71%, 56%) ;
+    box-shadow: 1px 8px 2px  hsl(349, 70%, 52%), inset 0px 6px 0px 0px rgba(0,0,0,.25);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.paperB{
+    border-radius: 100%;
+    border: solid 30px hsl(230, 89%, 65%) ;
+    box-shadow: 1px 8px 2px  hsl(230, 89%, 62%), inset 0px 8px 0px 0px rgba(0,0,0,.25);
+
+    
+}
+
+
+.scissorsB{
+    border-radius: 100%;
+    border: solid 30px hsl(40, 84%, 53%) ;
+    box-shadow: 1px 8px 2px  hsl(39, 89%, 49%), inset 0px 8px 0px 0px rgba(0,0,0,.25);
+    
+    
+}.rockB{
+    border-radius: 100%;
+    border: solid 30px hsl(349, 71%, 56%) ;
+    box-shadow: 1px 8px 2px  hsl(349, 70%, 52%), inset 0px 8px 0px 0px rgba(0,0,0,.25);
+}
+
+/*BUTTON*/
+
+.button4 {
+    background-color: transparent;
+    width: 9%;
+    padding: 3px;
+    color:white;
+    border: 1px solid  white;
+    border-radius: 6px;
+    float: right;
+    letter-spacing: 2px;
+  }
+  
+  
+  .playAgain{
+      background-color: white;
+      color: hsl(229, 25%, 31%);
+      border-radius: 6px;
+      width: 100%;
+      padding: 6px;
+      letter-spacing: 2px;
+      font-size: small;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  .playAgain:hover{
+    color: hsl(349, 70%, 52%);
+}
+
+  .rules{
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 10px 10px 0px 800px rgba(0,0,0,0.50);
+      width: 30%;
+      margin: auto;
+      position: relative;
+      margin-top: -30%;
+      padding: 2%;
+      font-size: 25px;
+      color: hsl(229, 25%, 31%);
+      font-weight: 700; 
+  }
+
+  .cls{
+      display: flex;
+  }
+
+  .cls img{
+    margin-left: 260px;
+    height: 20px;
+  }
+  
+
+  .bg{
+      width: 300px;
+      height: 300px;
+      margin-left: 20%;
+  }
+
+  .imgBg{
+      width: 150px;
+      height: 150px;
+  }
+
+  .triangle{
+      visibility: visible;
+  }
+
+  .empty{
+      background-color:hsl(237, 49%, 15%);
+      border-radius: 100%;
+      width: 250px;
+      height: 250px;
+     
+
+  }
+  .white{
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-size: large;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      
+  }
+
+  /*tableeee*/
+
+  .winnerText{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  .win{
+      width:170px ;
+      margin: auto;
+  }
+
+  .center{
+      margin: auto;
+  }
+
+  .flex{
+      display: flex;
+  }
+
+  .tb {
+    
+    width:75%;
+    padding: 5px;
+    
+  }
+
+  /*
+  table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+*/
+
+  #choice{
+      margin-top: -28%;
+      visibility: hidden;
+  }
+  #winner{
+    margin-top: -18%;
+    visibility: hidden;
+    
+}
+.btmRight{
+    margin-top: 10%;
+}
+
+
+@media screen and (max-width:376px){
+    body{
+        width:375px;
+        height: 100%;
+        background: linear-gradient(180deg,hsl(214, 47%, 23%) 0%, hsl(237, 49%, 15%) 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .score{
+        background-color: white;
+        color: hsl(229, 64%, 46%);
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 6px;
+        padding: 3%;
+        width: 30%;
+        height:60px;
+    }
+    .num{
+        color: hsl(229, 25%, 31%);
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: -10px;
+    }
+
+    img.mov{
+        width: 80px;
+        height: 45px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5%;
+    }
+    
+    .lttrsp{
+        letter-spacing: 3px;
+    }
+    .sc{
+        font-size: 10px;
+        
+    }
+    
+    .box{
+        
+        border: solid 3px hsl(217, 16%, 45%);
+        border-radius: 8px;
+        justify-content: space-between;
+        display: flex;
+        margin: auto;
+        margin-top: 10%;
+        padding: 1%;
+        width: 80%;
+        height: 80px;
+        margin-bottom: -50px;
+    }
+    
+    
+    img.cent{
+        display: block;
+        margin: auto;
+        padding-top: 30%;
+        width: 55%;
+        height: 55%;
+    }
+    
+    .crclWh{
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        border-radius: 150%;
+        border: solid 6px white ;
+        box-shadow: 1px 4px 2px hsl(217, 16%, 45%)
+    }
+    .pic{
+        margin: auto;
+        margin-top: 24%;
+        display: block;
+    }
+    
+    .pic2{
+        margin: auto;
+        margin-top: 15%;
+        display: block;
+    }
+    
+    /*image circle*/
+    .paper{
+        border-radius: 100%;
+        border: solid 8px hsl(230, 89%, 65%) ;
+        box-shadow: 1px 3px 2px  hsl(230, 89%, 62%), inset 0px 3px 0px 0px rgba(0,0,0,.25);
+        position: relative;
+        width: 105px;
+        height: 105px;
+        margin-top: -55%;
+        margin-left: 15%;
+    }
+    
+    .imgS{
+        width: 50px;
+        height: 50px;
+      }
+    
+    .scissors{
+        border-radius: 100%;
+        border: solid 8px hsl(40, 84%, 53%) ;
+        box-shadow: 1px 3px 2px  hsl(39, 89%, 49%), inset 0px 3px 0px 0px rgba(0,0,0,.25);
+        position: relative;
+        width: 105px;
+        height: 105px;
+        margin-top: -27%;
+        margin-left: 60%;
+        
+    }.rock{
+        border-radius: 100%;
+        border: solid 8px hsl(349, 71%, 56%) ;
+        box-shadow: 1px 3px 2px  hsl(349, 70%, 52%), inset 0px 3px 0px 0px rgba(0,0,0,.25);
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15%;
+        position: relative;
+        width: 105px;
+        height: 105px;
+        
+    }
+    
+    .paperB{
+        border-radius: 100%;
+        border: solid 20px hsl(230, 89%, 65%) ;
+        box-shadow: 1px 8px 2px  hsl(230, 89%, 62%), inset 0px 8px 0px 0px rgba(0,0,0,.25);
+        width: 50px;
+        height: 105px;
+        
+    }
+    
+    
+    .scissorsB{
+        border-radius: 100%;
+        border: solid 20px hsl(40, 84%, 53%) ;
+        box-shadow: 1px 8px 2px  hsl(39, 89%, 49%), inset 0px 8px 0px 0px rgba(0,0,0,.25);
+        width: 105px;
+        height: 105px;
+        
+    }.rockB{
+        border-radius: 100%;
+        border: solid 20px hsl(349, 71%, 56%) ;
+        box-shadow: 1px 8px 2px  hsl(349, 70%, 52%), inset 0px 8px 0px 0px rgba(0,0,0,.25);
+        width: 105px;
+        height: 105px;
+    }
+    
+    /*BUTTON*/
+    
+    .button4 {
+        background-color: transparent;
+        width: 20%;
+        padding: 3px;
+        color:white;
+        border: 1px solid  white;
+        border-radius: 6px;
+        float: none;
+        margin: auto;
+        display: block;
+        letter-spacing: 2px;
+        margin-top: -200px;
+      }
+      .btmRight{
+        margin-top: 60%;
+    }
+    .triangle{
+        margin-bottom: 75px;
+    }
+      
+
+      .playAgain{
+        background-color: white;
+        color: hsl(229, 25%, 31%);
+        border-radius: 6px;
+        width: 100%;
+        padding: 6px;
+        letter-spacing: 2px;
+        font-size: small;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    .playAgain:hover{
+      color: hsl(349, 70%, 52%);
+  }
+    
+      .rules{
+          background-color: white;
+          border-radius: 8px;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          position: absolute;
+          top: 15%;
+          padding: 2%;
+          font-size: 25px;
+          color: hsl(229, 25%, 31%);
+          font-weight: 700; 
+      }
+    
+      .cls{
+          margin-top: 20%;
+          margin-bottom: 70px;
+         
+      }
+      .closeX{
+          display: inline;
+      }
+    
+      .cls img{
+        margin-left: 260px;
+        height: 20px;
+      }
+    
+      .bg{
+          width: 150px;
+          height: 150px;
+          margin-left: 20%;
+      }
+    
+      .imgBg{
+          width: 60px;
+          height: 60px;
+      }
+
+    
+      .triangle{
+          visibility: visible;
+      }
+    
+      .empty{
+          background-color:hsl(237, 49%, 15%);
+          border-radius: 100%;
+          width: 250px;
+          height: 250px;
+         
+    
+      }
+      .white{
+          color: white;
+          text-align: center;
+          font-weight: 600;
+          letter-spacing: 2px;
+          font-size: large;
+          font-family: 'Barlow Semi Condensed', sans-serif;
+          padding-right: 20px;
+          margin-left: -30px;
+      }
+    
+      /*tableeee*/
+    
+      .winnerText{
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 40px;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+      }
+      .win{
+          width:170px ;
+          margin: auto;
+      }
+    
+      .center{
+          margin: auto;
+      }
+    
+      .flex{
+          display: flex;
+      }
+    
+      .tb {
+        
+        width:75%;
+        padding: 5px;
+        
+      }
+    
+    
+      #choice{
+          margin-top: -88%;
+          visibility: hidden;
+      }
+      #winner{
+        margin-top: 5%;
+        margin-bottom: -200px;
+        visibility: hidden;
+        
+    }
+    
+}

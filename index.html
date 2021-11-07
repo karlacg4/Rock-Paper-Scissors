@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+
+  <title>
+    Rock, Paper, Scissors, Lizard, Spock
+  </title>
+
+</head>
+<body>
+<!--score-->
+  <section class="box">
+    <img class="mov" src="./images/logo.svg">
+    <div class="score">
+      <div class="lttrsp sc">SCORE</div>
+      <div class="num" id="points">
+        0
+      </div>
+    </div>
+  </section>
+
+  <!--Options-->
+  <div id="options" class="triangle" >
+    <img class="cent"  src="./images/bg-triangle.svg" >
+
+    <div class="paper crclWh" onclick="game(this.id)" id="paper">
+      <img class=" pic imgS"  src="./images/icon-paper.svg" >
+    </div>
+
+    <div class="scissors crclWh" onclick="game(this.id)" id="scissors">
+      <img class=" pic imgS" src="images/icon-scissors.svg" >
+    </div>
+
+    <div class="rock crclWh" onclick="game(this.id)" id="rock">
+      <img class=" pic imgS" src="./images/icon-rock.svg" >
+    </div>
+  </div>
+  
+  <!--Choices-->
+<div id="choice" >
+  <table style="width:75%" class="center tb" >
+    <tr>
+      <td class="white" id="yp">
+        YOU PICKED
+        <br>
+      </td>
+      <td class="white" id="hp">
+        THE HOUSE PICKED
+      </td>
+    </tr>
+    <tr>
+      <td >
+        <br>
+        <div class="paperB crclWh bg center"  hidden id="paperChoice">
+          <img class="pic imgBg"  src="images/icon-paper.svg" >
+        </div>
+        <div class="scissorsB crclWh bg center" hidden id="scissorsChoice">
+          <img class="pic imgBg"  src="images/icon-scissors.svg" >
+        </div>
+        <div class="rockB crclWh bg center" hidden id="rockChoice">
+          <img class="pic imgBg"  src="images/icon-rock.svg" >
+        </div>
+      </td>
+      <td >
+        <br>
+        <div class="empty center" id="empty">
+        </div>
+        <div class="paperB crclWh bg center" hidden id="paperComp">
+          <img class="pic imgBg"  src="images/icon-paper.svg" >
+        </div>
+        <div class="scissorsB crclWh bg center" hidden id="scissorsComp">
+          <img class="pic imgBg"  src="images/icon-scissors.svg" >
+        </div>
+        <div class="rockB crclWh bg center" hidden id="rockComp">
+          <img class="pic imgBg"  src="images/icon-rock.svg" >
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!--winner-->
+<div id="winner" >
+  <table style="width:80%" class="center tb winTb" >
+    <tr>
+      <td class="white">
+    
+        <br>
+      </td>
+      <td>
+      </td>
+      <td >
+      
+      </td>
+    </tr>
+    <tr>
+      <td >
+        <br>
+        
+      </td>
+      <td>
+        <div class="win">
+          <p class="winnerText" id="wtext">
+            YOU WIN
+          </p>
+          <button class="playAgain " onclick="pAgain()" ><b>PLAY AGAIN</b></button>
+        </div>
+      </td>
+      <td >
+        <br>
+        
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="btmRight"id="bt">
+  <button class="button4 button " onclick="openRules()" ><b>RULES</b></button>
+</div>
+
+  <!--rules-->
+<div class="rules" hidden=true id="rules" >
+  <div class="cls">
+    RULES
+    <img  src="images/icon-close.svg" onclick="closeRules()">
+  </div>
+  <img class=" pic2" src="images/image-rules.svg" >
+</div>
+
+</body>
+</html>
